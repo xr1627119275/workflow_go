@@ -25,5 +25,5 @@ jobs:
     # 运行
     - name: Run
       env:
-        development: ${secrets.DEVELOPMENT}
+        development: ${{secrets.DEVELOPMENT}}
       run: go run hello.go -development=${development}
